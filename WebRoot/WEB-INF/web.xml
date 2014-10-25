@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <servlet-name>StuList</servlet-name>
+    <servlet-class>com.zyy.servlet.StuList</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>stuDelete</servlet-name>
+    <servlet-class>com.zyy.servlet.stuDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StuFind</servlet-name>
+    <servlet-class>com.zyy.servlet.StuFind</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>StuInsert</servlet-name>
+    <servlet-class>com.zyy.servlet.StuInsert</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>StuList</servlet-name>
+    <url-pattern>/student/StuList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>stuDelete</servlet-name>
+    <url-pattern>/student/stuDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StuFind</servlet-name>
+    <url-pattern>/student/stuFind</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StuInsert</servlet-name>
+    <url-pattern>/servlet/StuInsert</url-pattern>
+  </servlet-mapping>
+
+</web-app>
